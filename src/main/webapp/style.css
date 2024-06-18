@@ -1,0 +1,56 @@
+/* style.css */
+
+body {
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    height: 100vh;
+}
+
+.login-page {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    transform: translateX(90%);
+    transition: transform 0.5s ease;
+}
+
+.form {
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #17a589;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #148f77;
+}
+
+.form .fas.fa-eye {
+    cursor: pointer;
+}

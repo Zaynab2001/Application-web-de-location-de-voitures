@@ -1,0 +1,367 @@
+@charset "ISO-8859-1";
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url(Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(Comfortaa-Bold.ttf);
+}
+
+.container {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa-Regular;
+}
+
+header {
+    height: 60px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2B4257;
+}
+
+nav li {
+    display: inline;
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 7px;
+}
+
+nav li:hover {
+    border-bottom: 3px solid #2B4257;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2B4257;
+}
+
+#top div{
+    width: 30%;
+    text-align: center;
+}
+
+#top h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#top p{
+    font-size: 25px;
+}
+
+#about, #programs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about .col {
+    width: 45%;
+}
+
+#about img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#about #text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#about .title {
+    color: #2B4257;
+    font-size: 35px;
+}
+
+#about p {
+    color: #2B4257;
+    font-size: 20px;
+}
+
+#about button {
+    width: max-content;
+    padding: 12px 15px;
+    background-color: #2B4257;
+    border: 1px solid #2B4257;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+#about button:hover {
+    color: #2B4257;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+    background-color: #f3f3f3;
+    font-size: 34px;
+
+}
+
+#programs {
+    background-color: #f3f3f3;
+}
+
+.program {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.program .name {
+    color: #2B4257;
+    margin: 5px 0;
+    font-family: Comfortaa-Bold;
+    text-align: center;
+}
+
+.program .description {
+    color: #2B4257;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.program .price {
+    background-color: #e10032;
+    color: #fff;
+    padding: 8px;
+    letter-spacing: 3px;
+    width: max-content;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#for-contacts {
+    background-color: #fff;
+}
+
+#contacts {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+#contacts .col {
+    width: 49%;
+}
+
+#enrol form {
+    display: flex;
+    flex-direction: column;
+}
+
+#enrol h2, #enrol label{
+    color: #2B4257;
+    margin-bottom: 3px;
+}
+
+#enrol input[type="submit"] {
+    background-color: #2B4257;
+    border: 1px solid #2B4257;
+    color: #fff;
+    padding: 12px 15px;
+    letter-spacing: 3px;
+    margin: 8px 0;
+}
+
+#enrol input, #enrol select {
+    font-size: 20px;
+    padding: 4px;
+    margin-bottom: 12px;
+}
+
+#enrol p{
+    color: #e10032;
+    margin-top: 8px;
+}
+
+#info #map{
+    height: 90%;
+}
+
+#info iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+#info #socials  {
+    height: 10%;
+}
+
+#info #socials img {
+    height: 100%;
+
+}
+
+
+
+footer p {
+    background-color: #2B4257 ;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header {
+        height: 45px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #top {
+        height: 300px;
+    }
+
+    #top div {
+        width: 95%;
+    }
+
+    #top h2 {
+        font-size: 23px;
+    }
+
+    #top p {
+        font-size: 16px;
+    }
+
+    #about, #programs {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #about #image {
+        display: none;
+    }
+
+    #about #text {
+        width: 100%;
+    }
+
+    #about .title {
+        font-size: 24px;
+    }
+
+    #about p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    #about button {
+        padding: 6px 8px;
+    }
+
+    .section-title {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    #programs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .program {
+        width: 90%;
+    }
+
+    .program .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .program img {
+        width: 80%;
+    }
+
+    .program .name {
+        font-size: 18px;
+    }
+
+    .program .description, .program .price {
+        font-size: 16px;
+    }
+
+    #contacts {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-direction: column-reverse;
+        gap: 10px;
+
+    }
+
+    #contacts .col {
+        width: 100%;
+    }
+
+    #enrol h2 {
+        font-size: 19px;
+    }
+
+    #enrol label {
+        font-size: 13px;
+    }
+
+    #enrol input, #enrol select {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    #enrol input[type="submit"] {
+        padding: 6px 8px;
+        margin-bottom: 4px;
+    }
+
+    #info {
+        height: 350px;
+    }
+
+    #socials {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    footer p {
+        padding: 10px;
+    }}
